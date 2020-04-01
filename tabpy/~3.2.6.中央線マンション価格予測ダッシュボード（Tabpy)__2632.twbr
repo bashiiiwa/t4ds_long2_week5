@@ -1,0 +1,1582 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0304.1147                               -->
+<workbook source-build='2020.2.0 (20202.20.0304.1147)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <ParameterAction />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='15' />
+    </style-rule>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='p_station' datatype='string' name='[express (コピー)]' param-domain-type='list' role='measure' type='nominal' value='&quot;阿佐ヶ谷&quot;'>
+        <calculation class='tableau' formula='&quot;阿佐ヶ谷&quot;' />
+        <members>
+          <member value='&quot;阿佐ヶ谷&quot;' />
+          <member value='&quot;荻窪&quot;' />
+          <member value='&quot;吉祥寺&quot;' />
+          <member value='&quot;御茶ノ水&quot;' />
+          <member value='&quot;高円寺&quot;' />
+          <member value='&quot;国分寺&quot;' />
+          <member value='&quot;国立&quot;' />
+          <member value='&quot;三鷹&quot;' />
+          <member value='&quot;四ツ谷&quot;' />
+          <member value='&quot;市ヶ谷&quot;' />
+          <member value='&quot;信濃町&quot;' />
+          <member value='&quot;新宿&quot;' />
+          <member value='&quot;神田&quot;' />
+          <member value='&quot;水道橋&quot;' />
+          <member value='&quot;西荻窪&quot;' />
+          <member value='&quot;西国分寺&quot;' />
+          <member value='&quot;千駄ヶ谷&quot;' />
+          <member value='&quot;代々木&quot;' />
+          <member value='&quot;大久保&quot;' />
+          <member value='&quot;中野&quot;' />
+          <member value='&quot;東京&quot;' />
+          <member value='&quot;東小金井&quot;' />
+          <member value='&quot;東中野&quot;' />
+          <member value='&quot;飯田橋&quot;' />
+          <member value='&quot;武蔵境&quot;' />
+          <member value='&quot;武蔵小金井&quot;' />
+          <member value='&quot;立川&quot;' />
+        </members>
+      </column>
+      <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+        <calculation class='tableau' formula='0' />
+        <members>
+          <member value='0' />
+          <member value='1' />
+        </members>
+      </column>
+      <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+        <calculation class='tableau' formula='82' />
+        <range max='200' min='30' />
+      </column>
+      <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+        <calculation class='tableau' formula='12.12192561' />
+        <range max='100.0' min='0.0' />
+      </column>
+      <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+        <calculation class='tableau' formula='&quot;1LDK&quot;' />
+        <aliases>
+          <alias key='&quot;3KUP&quot;' value='3KUP' />
+        </aliases>
+        <members>
+          <member value='&quot;1K-1DK&quot;' />
+          <member value='&quot;1LDK&quot;' />
+          <member value='&quot;2K-2DK&quot;' />
+          <member value='&quot;2LDK&quot;' />
+          <member alias='3KUP' value='&quot;3KUP&quot;' />
+        </members>
+      </column>
+      <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+        <calculation class='tableau' formula='0' />
+        <members>
+          <member value='0' />
+          <member value='1' />
+        </members>
+      </column>
+      <column caption='p_type' datatype='string' name='[type (Tokyo_Housing_Chiyoda_Id) のパラメーター]' param-domain-type='list' role='measure' type='nominal' value='&quot;中古マンション等&quot;'>
+        <calculation class='tableau' formula='&quot;中古マンション等&quot;' />
+        <members>
+          <member value='&quot;中古マンション等&quot;' />
+        </members>
+      </column>
+      <column caption='p_ward' datatype='string' name='[ward (Tokyo_Housing_Chiyoda_Id) のパラメーター]' param-domain-type='list' role='measure' type='nominal' value='&quot;中央区&quot;'>
+        <calculation class='tableau' formula='&quot;中央区&quot;' />
+        <members>
+          <member value='&quot;江東区&quot;' />
+          <member value='&quot;新宿区&quot;' />
+          <member value='&quot;千代田区&quot;' />
+          <member value='&quot;中央区&quot;' />
+        </members>
+      </column>
+      <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+        <calculation class='tableau' formula='15' />
+        <range max='50' min='1' />
+      </column>
+      <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+        <calculation class='tableau' formula='7' />
+        <range granularity='1' max='20' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='中央線-UTF8+Express' inline='true' name='federated.1ma5miw1otopq41ajspdj10wnvvm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='中央線-UTF8+Express' name='textscan.0plyjvc1ollyj811g0e2r0kj65c0'>
+            <connection class='textscan' directory='Data/TableauBook 1' filename='中央線-UTF8+Express.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0plyjvc1ollyj811g0e2r0kj65c0' name='中央線-UTF8+Express.csv' table='[中央線-UTF8+Express#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ja_JP' separator=','>
+            <column datatype='integer' name='sid' ordinal='0' />
+            <column datatype='string' name='station' ordinal='1' />
+            <column datatype='integer' name='express' ordinal='2' />
+            <column datatype='real' name='distance' ordinal='3' />
+            <column datatype='real' name='latilude' ordinal='4' />
+            <column datatype='real' name='longitude' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0plyjvc1ollyj811g0e2r0kj65c0' name='中央線-UTF8+Express.csv' table='[中央線-UTF8+Express#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ja_JP' separator=','>
+            <column datatype='integer' name='sid' ordinal='0' />
+            <column datatype='string' name='station' ordinal='1' />
+            <column datatype='integer' name='express' ordinal='2' />
+            <column datatype='real' name='distance' ordinal='3' />
+            <column datatype='real' name='latilude' ordinal='4' />
+            <column datatype='real' name='longitude' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ja&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;￥&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ja_JP&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sid]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>sid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>station</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LJA_RJP' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>express</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[express]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>express</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latilude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latilude]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>latilude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[中央線-UTF8+Express.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[中央線-UTF8+Express.csv]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='rooms_1k_1dk' datatype='integer' name='[Calculation_1487032323614343171]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1K-1DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='rooms_2k_2dk' datatype='integer' name='[Calculation_1487032323614502916]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2K-2DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='rooms_2ldk' datatype='integer' name='[Calculation_1487032323614568453]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='rooms_3dk_3ldk' datatype='integer' name='[Calculation_1487032323614629894]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;3KUP&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='predict_price' datatype='real' name='[Calculation_1487032323614769159]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;&#13;&#10;return tabpy.query(&apos;housingprice&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7,_arg8,_arg9,_arg10,_arg11)[&apos;response&apos;]&#13;&#10;&#13;&#10;&quot;, &#13;&#10;MAX([Parameters].[パラメーター 1]), &#13;&#10;MAX([Parameters].[パラメーター 2]), &#13;&#10;MAX([Parameters].[p_station (コピー)]), &#13;&#10;MAX([Parameters].[p_years (コピー)]) , &#13;&#10;MAX([Parameters].[p_sqrm (コピー)]) , &#13;&#10;MAX([Parameters].[renovate (コピー)]) , &#13;&#10;MAX([Calculation_1487032323614343171]),&#13;&#10;MAX([rooms_1k_1dk (コピー)]),&#13;&#10;MAX([Calculation_1487032323614502916]),&#13;&#10;MAX([Calculation_1487032323614568453]),&#13;&#10;MAX([Calculation_1487032323614629894])&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='中央線-UTF8+Express.csv' datatype='table' name='[__tableau_internal_object_id__].[中央線-UTF8+Express.csv]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[latilude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='real' name='[predict_price (コピー)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;&#13;&#10;return tabpy.query(&apos;housingprice&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7,_arg8,_arg9,_arg10,_arg11)[&apos;response&apos;]&#13;&#10;&#13;&#10;&quot;, &#13;&#10;SUM([Parameters].[パラメーター 1]), &#13;&#10;SUM([Parameters].[パラメーター 2]), &#13;&#10;SUM([Parameters].[p_station (コピー)]), &#13;&#10;SUM([Parameters].[p_years (コピー)]) , &#13;&#10;SUM([Parameters].[p_sqrm (コピー)]) , &#13;&#10;SUM([Parameters].[renovate (コピー)]) , &#13;&#10;SUM([Calculation_1487032323614343171]),&#13;&#10;SUM([rooms_1k_1dk (コピー)]),&#13;&#10;SUM([Calculation_1487032323614502916]),&#13;&#10;SUM([Calculation_1487032323614568453]),&#13;&#10;SUM([Calculation_1487032323614629894])&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='rooms_1ldk' datatype='integer' name='[rooms_1k_1dk (コピー)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[sid]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Japan&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+        </column>
+        <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+          <calculation class='tableau' formula='82' />
+          <range max='200' min='30' />
+        </column>
+        <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+          <calculation class='tableau' formula='12.12192561' />
+          <range max='100.0' min='0.0' />
+        </column>
+        <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+          <calculation class='tableau' formula='&quot;1LDK&quot;' />
+          <aliases>
+            <alias key='&quot;3KUP&quot;' value='3KUP' />
+          </aliases>
+        </column>
+        <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+        </column>
+        <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+          <calculation class='tableau' formula='15' />
+          <range max='50' min='1' />
+        </column>
+        <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+          <calculation class='tableau' formula='7' />
+          <range granularity='1' max='20' min='1' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='中央線-UTF8+Express.csv' id='中央線-UTF8+Express.csv'>
+            <properties context=''>
+              <relation connection='textscan.0plyjvc1ollyj811g0e2r0kj65c0' name='中央線-UTF8+Express.csv' table='[中央線-UTF8+Express#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ja_JP' separator=','>
+                  <column datatype='integer' name='sid' ordinal='0' />
+                  <column datatype='string' name='station' ordinal='1' />
+                  <column datatype='integer' name='express' ordinal='2' />
+                  <column datatype='real' name='distance' ordinal='3' />
+                  <column datatype='real' name='latilude' ordinal='4' />
+                  <column datatype='real' name='longitude' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+    <mapsource inline='true' name='OpenStreetMap' source-platform='win' version='18.1'>
+      <connection api-key='pk.eyJ1IjoiYmFzaGlpMDgxNGl3YSIsImEiOiJjaXZjMnY0em4wMTFxMzNtcWYwOHF0MmNnIn0.4IjB-2Xpiaj0vJsFHInMYA' class='MapBox' description='A map for running, biking, and hiking' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1IjoiYmFzaGlpMDgxNGl3YSIsImEiOiJjaXZjMnY0em4wMTFxMzNtcWYwOHF0MmNnIn0.4IjB-2Xpiaj0vJsFHInMYA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US\normal' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1IjoiYmFzaGlpMDgxNGl3YSIsImEiOiJjaXZjMnY0em4wMTFxMzNtcWYwOHF0MmNnIn0.4IjB-2Xpiaj0vJsFHInMYA' username='' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Run, Bike, and Hike' name='mapbox.run-bike-hike' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='dark' name='dark' wait-tile-color='#dddddd'>
+          <map-layer-style name='Run, Bike, and Hike' request-string='mapbox.run-bike-hike' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='mapbox.run-bike-hike' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='マップについて' copyright-url='http://www.tableau.com/ja-jp/mapdata' short-copyright-string='' />
+    </mapsource>
+  </mapsources>
+  <actions>
+    <action caption='GoogleMap表示' name='[Action7]'>
+      <activation type='on-select' />
+      <source dashboard='駅と距離の指定 (地図)' type='sheet' worksheet='中央線マップ' />
+      <link caption='' expression='https://www.google.com/maps/place/?q=&lt;[Parameters].[express (コピー)]&gt;&amp;z=18' />
+    </action>
+    <datasources>
+      <datasource caption='パラメーター' name='Parameters' />
+    </datasources>
+    <datasource-dependencies datasource='Parameters'>
+      <column caption='p_station' datatype='string' name='[express (コピー)]' param-domain-type='list' role='measure' type='nominal' value='&quot;阿佐ヶ谷&quot;'>
+        <calculation class='tableau' formula='&quot;阿佐ヶ谷&quot;' />
+        <members>
+          <member value='&quot;阿佐ヶ谷&quot;' />
+          <member value='&quot;荻窪&quot;' />
+          <member value='&quot;吉祥寺&quot;' />
+          <member value='&quot;御茶ノ水&quot;' />
+          <member value='&quot;高円寺&quot;' />
+          <member value='&quot;国分寺&quot;' />
+          <member value='&quot;国立&quot;' />
+          <member value='&quot;三鷹&quot;' />
+          <member value='&quot;四ツ谷&quot;' />
+          <member value='&quot;市ヶ谷&quot;' />
+          <member value='&quot;信濃町&quot;' />
+          <member value='&quot;新宿&quot;' />
+          <member value='&quot;神田&quot;' />
+          <member value='&quot;水道橋&quot;' />
+          <member value='&quot;西荻窪&quot;' />
+          <member value='&quot;西国分寺&quot;' />
+          <member value='&quot;千駄ヶ谷&quot;' />
+          <member value='&quot;代々木&quot;' />
+          <member value='&quot;大久保&quot;' />
+          <member value='&quot;中野&quot;' />
+          <member value='&quot;東京&quot;' />
+          <member value='&quot;東小金井&quot;' />
+          <member value='&quot;東中野&quot;' />
+          <member value='&quot;飯田橋&quot;' />
+          <member value='&quot;武蔵境&quot;' />
+          <member value='&quot;武蔵小金井&quot;' />
+          <member value='&quot;立川&quot;' />
+        </members>
+      </column>
+    </datasource-dependencies>
+    <edit-parameter-action caption='パラメーター1' name='[Action4]'>
+      <activation type='on-select' />
+      <source dashboard='駅と距離の指定' type='sheet' worksheet='駅と距離' />
+      <agg-type type='sum' />
+      <params>
+        <param name='source-field' value='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:DISTANCE:qk]' />
+        <param name='target-parameter' value='[Parameters].[p_years (コピー)]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='距離の代入' name='[Action5]'>
+      <activation type='on-select' />
+      <source dashboard='駅と距離の指定 (地図)' type='sheet' worksheet='中央線マップ' />
+      <agg-type type='sum' />
+      <params>
+        <param name='source-field' value='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:distance:qk]' />
+        <param name='target-parameter' value='[Parameters].[p_years (コピー)]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='駅名の代入' name='[Action6]'>
+      <activation type='on-select' />
+      <source dashboard='駅と距離の指定 (地図)' type='sheet' worksheet='中央線マップ' />
+      <agg-type type='attr' />
+      <params>
+        <param name='source-field' value='[federated.1ma5miw1otopq41ajspdj10wnvvm].[none:station:nk]' />
+        <param name='target-parameter' value='[Parameters].[express (コピー)]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='快速停止フラグの代入' name='[Action8]'>
+      <activation type='on-select' />
+      <source dashboard='駅と距離の指定 (地図)' type='sheet' worksheet='中央線マップ' />
+      <agg-type type='sum' />
+      <params>
+        <param name='source-field' value='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:express:qk]' />
+        <param name='target-parameter' value='[Parameters].[renovate (コピー)]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='中央線マップ'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='中央線-UTF8+Express' name='federated.1ma5miw1otopq41ajspdj10wnvvm' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ma5miw1otopq41ajspdj10wnvvm'>
+            <column-instance column='[latilude]' derivation='Avg' name='[avg:latilude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[distance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[express]' role='measure' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[latilude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[sid]' derivation='None' name='[none:sid:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[station]' derivation='None' name='[none:station:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[sid]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[distance]' derivation='Sum' name='[sum:distance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[express]' derivation='Sum' name='[sum:express:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk]' field-type='quantitative' fold='true' max='4261024.580981086' min='4254323.7293361574' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:longitude:qk]' field-type='quantitative' max='15562269.818471322' min='15542278.205609635' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk]' field-type='quantitative' max='4261024.580981086' min='4254323.7293361574' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='hillshade_highlight_bright' value='false' />
+            <format attr='enabled' id='hillshade_highlight_med' value='false' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='false' />
+            <format attr='enabled' id='hillshade_shadow_med' value='false' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='false' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='false' />
+            <format attr='enabled' id='building-line' value='false' />
+            <format attr='enabled' id='building' value='false' />
+            <format attr='enabled' id='poi-scalerank4-l15' value='false' />
+            <format attr='enabled' id='poi-scalerank4-l1' value='false' />
+            <format attr='enabled' id='poi-parks_scalerank4' value='false' />
+            <format attr='enabled' id='poi-scalerank3' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank3' value='false' />
+            <format attr='enabled' id='poi-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank1' value='false' />
+            <format attr='enabled' id='poi-scalerank1' value='false' />
+            <format attr='enabled' id='airport-label' value='false' />
+            <format attr='enabled' id='place-residential' value='false' />
+            <format attr='enabled' id='place-neighbourhood' value='false' />
+            <format attr='enabled' id='place-suburb' value='false' />
+            <format attr='enabled' id='place-hamlet' value='false' />
+            <format attr='enabled' id='place-village' value='false' />
+            <format attr='enabled' id='place-town' value='false' />
+            <format attr='enabled' id='place-city-sm' value='false' />
+            <format attr='enabled' id='place-city-md-s' value='false' />
+            <format attr='enabled' id='place-city-md-n' value='false' />
+            <format attr='enabled' id='place-city-lg-s' value='false' />
+            <format attr='enabled' id='place-city-lg-n' value='false' />
+            <format attr='enabled' id='place-islet-archipelago-aboriginal' value='false' />
+            <format attr='enabled' id='place-island' value='false' />
+            <format attr='enabled' id='marine-label-sm-ln' value='false' />
+            <format attr='enabled' id='marine-label-sm-pt' value='false' />
+            <format attr='enabled' id='marine-label-md-ln' value='false' />
+            <format attr='enabled' id='marine-label-md-pt' value='false' />
+            <format attr='enabled' id='marine-label-lg-ln' value='false' />
+            <format attr='enabled' id='marine-label-lg-pt' value='false' />
+            <format attr='enabled' id='waterway-label' value='false' />
+            <format attr='enabled' id='water-label-sm' value='false' />
+            <format attr='enabled' id='water-label' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:express:qk]' />
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:distance:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.82359117269515991' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-disallow' y-axis-name='[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:express:qk]' />
+              <path column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[none:sid:ok]' />
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:distance:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.82359117269515991' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-disallow' y-axis-name='[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:express:qk]' />
+              <text column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[none:station:nk]' />
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[none:sid:ok]' />
+              <lod column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[sum:distance:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5272375345230103' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='line-interpolation' value='linear' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk] + [federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:latilude:qk])</rows>
+        <cols>[federated.1ma5miw1otopq41ajspdj10wnvvm].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{C404FD2E-7B42-4A6E-AB43-4708E3E502F1}' />
+    </worksheet>
+    <worksheet name='予測結果'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontsize='26'><![CDATA[駅名：　　<[Parameters].[express (コピー)]>]]></run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='26'><![CDATA[広さ：　　　<[Parameters].[p_station (コピー)]>　㎡]]></run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='26'><![CDATA[タイプ：　　 <[Parameters].[renovate (コピー 2)]>]]></run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='26'><![CDATA[築年数：　<[Parameters].[パラメーター 1]>　年]]></run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='26'><![CDATA[駅からの距離： 徒歩<[Parameters].[パラメーター 2]>分]]></run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='26'>予想価格は！！</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='中央線-UTF8+Express' name='federated.1ma5miw1otopq41ajspdj10wnvvm' />
+            <datasource caption='パラメーター' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='p_station' datatype='string' name='[express (コピー)]' param-domain-type='list' role='measure' type='nominal' value='&quot;阿佐ヶ谷&quot;'>
+              <calculation class='tableau' formula='&quot;阿佐ヶ谷&quot;' />
+            </column>
+            <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+              <calculation class='tableau' formula='82' />
+              <range max='200' min='30' />
+            </column>
+            <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+              <calculation class='tableau' formula='12.12192561' />
+              <range max='100.0' min='0.0' />
+            </column>
+            <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+              <calculation class='tableau' formula='&quot;1LDK&quot;' />
+              <aliases>
+                <alias key='&quot;3KUP&quot;' value='3KUP' />
+              </aliases>
+            </column>
+            <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+              <calculation class='tableau' formula='15' />
+              <range max='50' min='1' />
+            </column>
+            <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+              <calculation class='tableau' formula='7' />
+              <range granularity='1' max='20' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ma5miw1otopq41ajspdj10wnvvm'>
+            <column caption='rooms_1k_1dk' datatype='integer' name='[Calculation_1487032323614343171]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1K-1DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_2k_2dk' datatype='integer' name='[Calculation_1487032323614502916]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2K-2DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_2ldk' datatype='integer' name='[Calculation_1487032323614568453]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_3dk_3ldk' datatype='integer' name='[Calculation_1487032323614629894]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;3KUP&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='predict_price' datatype='real' name='[Calculation_1487032323614769159]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;&#13;&#10;return tabpy.query(&apos;housingprice&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7,_arg8,_arg9,_arg10,_arg11)[&apos;response&apos;]&#13;&#10;&#13;&#10;&quot;, &#13;&#10;MAX([Parameters].[パラメーター 1]), &#13;&#10;MAX([Parameters].[パラメーター 2]), &#13;&#10;MAX([Parameters].[p_station (コピー)]), &#13;&#10;MAX([Parameters].[p_years (コピー)]) , &#13;&#10;MAX([Parameters].[p_sqrm (コピー)]) , &#13;&#10;MAX([Parameters].[renovate (コピー)]) , &#13;&#10;MAX([Calculation_1487032323614343171]),&#13;&#10;MAX([rooms_1k_1dk (コピー)]),&#13;&#10;MAX([Calculation_1487032323614502916]),&#13;&#10;MAX([Calculation_1487032323614568453]),&#13;&#10;MAX([Calculation_1487032323614629894])&#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='rooms_1ldk' datatype='integer' name='[rooms_1k_1dk (コピー)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_1487032323614769159]' derivation='User' name='[usr:Calculation_1487032323614769159:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk:2]' value='bold' />
+            <format attr='text-format' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk:2]' value='c&quot;¥&quot;#,##0;-&quot;¥&quot;#,##0' />
+            <format attr='font-size' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk:2]' value='48' />
+            <format attr='color' field='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk:2]' value='#ff00ff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3F7566A6-66F9-4526-857B-D9E903570E4E}' />
+    </worksheet>
+    <worksheet name='簡単な計算式のテスト'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='中央線-UTF8+Express' name='federated.1ma5miw1otopq41ajspdj10wnvvm' />
+            <datasource caption='パラメーター' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+              <calculation class='tableau' formula='82' />
+              <range max='200' min='30' />
+            </column>
+            <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+              <calculation class='tableau' formula='12.12192561' />
+              <range max='100.0' min='0.0' />
+            </column>
+            <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+              <calculation class='tableau' formula='&quot;1LDK&quot;' />
+              <aliases>
+                <alias key='&quot;3KUP&quot;' value='3KUP' />
+              </aliases>
+            </column>
+            <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+              <calculation class='tableau' formula='15' />
+              <range max='50' min='1' />
+            </column>
+            <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+              <calculation class='tableau' formula='7' />
+              <range granularity='1' max='20' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ma5miw1otopq41ajspdj10wnvvm'>
+            <column caption='rooms_1k_1dk' datatype='integer' name='[Calculation_1487032323614343171]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1K-1DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_2k_2dk' datatype='integer' name='[Calculation_1487032323614502916]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2K-2DK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_2ldk' datatype='integer' name='[Calculation_1487032323614568453]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;2LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='rooms_3dk_3ldk' datatype='integer' name='[Calculation_1487032323614629894]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;3KUP&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='predict_price' datatype='real' name='[Calculation_1487032323614769159]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;&quot;&#13;&#10;&#13;&#10;return tabpy.query(&apos;housingprice&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7,_arg8,_arg9,_arg10,_arg11)[&apos;response&apos;]&#13;&#10;&#13;&#10;&quot;, &#13;&#10;MAX([Parameters].[パラメーター 1]), &#13;&#10;MAX([Parameters].[パラメーター 2]), &#13;&#10;MAX([Parameters].[p_station (コピー)]), &#13;&#10;MAX([Parameters].[p_years (コピー)]) , &#13;&#10;MAX([Parameters].[p_sqrm (コピー)]) , &#13;&#10;MAX([Parameters].[renovate (コピー)]) , &#13;&#10;MAX([Calculation_1487032323614343171]),&#13;&#10;MAX([rooms_1k_1dk (コピー)]),&#13;&#10;MAX([Calculation_1487032323614502916]),&#13;&#10;MAX([Calculation_1487032323614568453]),&#13;&#10;MAX([Calculation_1487032323614629894])&#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='rooms_1ldk' datatype='integer' name='[rooms_1k_1dk (コピー)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[renovate (コピー 2)] = &apos;1LDK&apos; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_1487032323614769159]' derivation='User' name='[usr:Calculation_1487032323614769159:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ma5miw1otopq41ajspdj10wnvvm].[usr:Calculation_1487032323614769159:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D36548A5-D7AD-4013-AFF6-FCF24CAD3312}' />
+    </worksheet>
+    <worksheet name='駅と距離'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='中央線-UTF8+Express' name='federated.1ma5miw1otopq41ajspdj10wnvvm' />
+          </datasources>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0BBF652-5939-4B3F-B2D0-6DB6D1E2B5F9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='駅と距離の指定'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='パラメーター' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+          <members>
+            <member value='0' />
+            <member value='1' />
+          </members>
+        </column>
+        <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+          <calculation class='tableau' formula='82' />
+          <range max='200' min='30' />
+        </column>
+        <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+          <calculation class='tableau' formula='12.12192561' />
+          <range max='100.0' min='0.0' />
+        </column>
+        <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+          <calculation class='tableau' formula='&quot;1LDK&quot;' />
+          <aliases>
+            <alias key='&quot;3KUP&quot;' value='3KUP' />
+          </aliases>
+          <members>
+            <member value='&quot;1K-1DK&quot;' />
+            <member value='&quot;1LDK&quot;' />
+            <member value='&quot;2K-2DK&quot;' />
+            <member value='&quot;2LDK&quot;' />
+            <member alias='3KUP' value='&quot;3KUP&quot;' />
+          </members>
+        </column>
+        <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+          <members>
+            <member value='0' />
+            <member value='1' />
+          </members>
+        </column>
+        <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+          <calculation class='tableau' formula='15' />
+          <range max='50' min='1' />
+        </column>
+        <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+          <calculation class='tableau' formula='7' />
+          <range granularity='1' max='20' min='1' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='駅と距離' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='49200' x='50000' y='1000'>
+                <zone fixed-size='129' h='17125' id='10' is-fixed='true' name='予測結果' w='49200' x='50000' y='1000'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='8' mode='slider' param='[Parameters].[p_years (コピー)]' w='49200' x='50000' y='18125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='11' mode='slider' param='[Parameters].[パラメーター 1]' w='49200' x='50000' y='28875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='12' mode='slider' param='[Parameters].[パラメーター 2]' w='49200' x='50000' y='39625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='13' mode='slider' param='[Parameters].[p_station (コピー)]' w='49200' x='50000' y='50375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='14' mode='compact' param='[Parameters].[p_sqrm (コピー)]' w='49200' x='50000' y='61125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='15' mode='compact' param='[Parameters].[renovate (コピー)]' w='49200' x='50000' y='69000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='16' mode='compact' param='[Parameters].[renovate (コピー 2)]' w='49200' x='50000' y='76875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='52' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='53' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='駅と距離' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='129' h='17125' id='10' is-fixed='true' name='予測結果' w='49200' x='50000' y='1000'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='8' mode='slider' param='[Parameters].[p_years (コピー)]' w='49200' x='50000' y='18125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='11' mode='slider' param='[Parameters].[パラメーター 1]' w='49200' x='50000' y='28875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='12' mode='slider' param='[Parameters].[パラメーター 2]' w='49200' x='50000' y='39625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10750' id='13' mode='slider' param='[Parameters].[p_station (コピー)]' w='49200' x='50000' y='50375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='14' mode='compact' param='[Parameters].[p_sqrm (コピー)]' w='49200' x='50000' y='61125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='15' mode='compact' param='[Parameters].[renovate (コピー)]' w='49200' x='50000' y='69000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='7875' id='16' mode='compact' param='[Parameters].[renovate (コピー 2)]' w='49200' x='50000' y='76875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1AB10276-D4CC-428B-8074-2C145A30052E}' />
+    </dashboard>
+    <dashboard name='駅と距離の指定 (地図)'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='パラメーター' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='p_renovate' datatype='integer' name='[p_sqrm (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+          <members>
+            <member value='0' />
+            <member value='1' />
+          </members>
+        </column>
+        <column caption='p_sqrm' datatype='integer' name='[p_station (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='82'>
+          <calculation class='tableau' formula='82' />
+          <range max='200' min='30' />
+        </column>
+        <column caption='p_distance' datatype='real' datatype-customized='true' name='[p_years (コピー)]' param-domain-type='range' role='measure' type='quantitative' value='12.12192561'>
+          <calculation class='tableau' formula='12.12192561' />
+          <range max='100.0' min='0.0' />
+        </column>
+        <column caption='p_rooms' datatype='string' name='[renovate (コピー 2)]' param-domain-type='list' role='measure' type='nominal' value='&quot;1LDK&quot;'>
+          <calculation class='tableau' formula='&quot;1LDK&quot;' />
+          <aliases>
+            <alias key='&quot;3KUP&quot;' value='3KUP' />
+          </aliases>
+          <members>
+            <member value='&quot;1K-1DK&quot;' />
+            <member value='&quot;1LDK&quot;' />
+            <member value='&quot;2K-2DK&quot;' />
+            <member value='&quot;2LDK&quot;' />
+            <member alias='3KUP' value='&quot;3KUP&quot;' />
+          </members>
+        </column>
+        <column caption='p_express' datatype='integer' name='[renovate (コピー)]' param-domain-type='list' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+          <members>
+            <member value='0' />
+            <member value='1' />
+          </members>
+        </column>
+        <column caption='p_years' datatype='integer' name='[パラメーター 1]' param-domain-type='range' role='measure' type='quantitative' value='15'>
+          <calculation class='tableau' formula='15' />
+          <range max='50' min='1' />
+        </column>
+        <column caption='p_minutes' datatype='integer' name='[パラメーター 2]' param-domain-type='range' role='measure' type='quantitative' value='7'>
+          <calculation class='tableau' formula='7' />
+          <range granularity='1' max='20' min='1' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='13192' x='86325' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='13192' x='86325' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98142' id='6' is-fixed='true' param='vert' w='13192' x='86325' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='10801' id='11' mode='slider' param='[Parameters].[パラメーター 1]' w='13192' x='86325' y='929'>
+                  <formatted-text>
+                    <run>築年数</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='10801' id='12' mode='slider' param='[Parameters].[パラメーター 2]' w='13192' x='86325' y='11730'>
+                  <formatted-text>
+                    <run>駅からの距離</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='10801' id='13' mode='slider' param='[Parameters].[p_station (コピー)]' w='13192' x='86325' y='22531'>
+                  <formatted-text>
+                    <run>部屋の広さ（㎡）</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='8130' id='14' mode='compact' param='[Parameters].[p_sqrm (コピー)]' w='13192' x='86325' y='33332'>
+                  <formatted-text>
+                    <run>改装済み</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='8130' id='15' mode='compact' param='[Parameters].[renovate (コピー)]' w='13192' x='86325' y='41462'>
+                  <formatted-text>
+                    <run>快速停止駅</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='8130' id='16' mode='compact' param='[Parameters].[renovate (コピー 2)]' w='13192' x='86325' y='49592'>
+                  <formatted-text>
+                    <run>部屋の間取り&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='10801' id='33' mode='slider' param='[Parameters].[p_years (コピー)]' w='13192' x='86325' y='57722'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='39080' id='21' name='中央線マップ' w='55756' x='483' y='929'>
+            <layout-cache minheight='244' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='129' h='98142' id='10' is-fixed='true' name='予測結果' w='30086' x='56239' y='929'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='web' _.fcp.SetMembershipControl.true...type-v2='web' forceUpdate='' h='59062' id='22' param='https://www.google.com/maps/place/?q=阿佐ヶ谷&amp;z=18' w='55756' x='483' y='40009'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='58' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98230' id='59' param='vert' w='99086' x='457' y='885'>
+                <zone fixed-size='280' h='39116' id='21' is-fixed='true' name='中央線マップ' w='55786' x='457' y='885'>
+                  <layout-cache minheight='244' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98230' id='10' is-fixed='true' name='予測結果' w='30102' x='56243' y='885'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='9513' id='11' mode='slider' param='[Parameters].[パラメーター 1]' w='13198' x='86345' y='885'>
+                  <formatted-text>
+                    <run>築年数</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='9513' id='12' mode='slider' param='[Parameters].[パラメーター 2]' w='13198' x='86345' y='10398'>
+                  <formatted-text>
+                    <run>駅からの距離</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='9513' id='13' mode='slider' param='[Parameters].[p_station (コピー)]' w='13198' x='86345' y='19911'>
+                  <formatted-text>
+                    <run>部屋の広さ（㎡）</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='6969' id='14' mode='compact' param='[Parameters].[p_sqrm (コピー)]' w='13198' x='86345' y='29424'>
+                  <formatted-text>
+                    <run>改装済み</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='6969' id='15' mode='compact' param='[Parameters].[renovate (コピー)]' w='13198' x='86345' y='36393'>
+                  <formatted-text>
+                    <run>快速停止駅</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='web' _.fcp.SetMembershipControl.true...type-v2='web' fixed-size='280' forceUpdate='' h='59114' id='22' is-fixed='true' param='https://www.google.com/maps/place/?q=神田&amp;z=18' w='55786' x='457' y='40001'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' custom-title='true' h='6969' id='16' mode='compact' param='[Parameters].[renovate (コピー 2)]' w='13198' x='86345' y='43362'>
+                  <formatted-text>
+                    <run>部屋の間取り&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='paramctrl' _.fcp.SetMembershipControl.true...type-v2='paramctrl' h='9513' id='33' mode='slider' param='[Parameters].[p_years (コピー)]' w='13198' x='86345' y='50331'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4B7741F7-D69F-4E94-8752-A92F5A6DBA5F}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='中央線マップ'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7F77D03-614D-46F1-8C5C-DE071120431E}' />
+    </window>
+    <window class='worksheet' name='簡単な計算式のテスト' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='238'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='slider' param='[Parameters].[パラメーター 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[パラメーター 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[p_station (コピー)]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[p_years (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[p_sqrm (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[renovate (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[renovate (コピー 2)]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2E4AEBE6-4846-4949-A82A-9AF8271ABF50}' />
+    </window>
+    <window class='worksheet' name='予測結果' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[パラメーター 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[パラメーター 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[p_station (コピー)]' type='parameter' />
+            <card mode='slider' param='[Parameters].[p_years (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[p_sqrm (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[renovate (コピー)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[renovate (コピー 2)]' type='parameter' />
+            <card mode='compact' param='[Parameters].[express (コピー)]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{949EF8FB-B345-4710-B9F0-7692CBC263C8}' />
+    </window>
+    <window class='worksheet' name='駅と距離' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[p_years (コピー)]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F4031F9E-7702-4C39-9264-96D745EA66A6}' />
+    </window>
+    <window class='dashboard' name='駅と距離の指定' tab-color='#4f779a'>
+      <viewpoints>
+        <viewpoint name='予測結果' />
+        <viewpoint name='駅と距離' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0AC4F854-8470-45BC-B406-0797DADE5C9B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='駅と距離の指定 (地図)' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='中央線マップ'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='予測結果'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='21' />
+      <simple-id uuid='{15DC67DC-C353-457A-B4A5-046624197C50}' />
+    </window>
+  </windows>
+</workbook>
